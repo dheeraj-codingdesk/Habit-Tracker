@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Tiny Habit Tracker</h1>
+            <p class="subtitle">One feature, executed cleanly</p>
+        </header>
+
+        <main class="main">
+            <!-- Habit Creation Section -->
+            <section class="habit-creation">
+                <h2>Create New Habit</h2>
+                <form id="habit-form" class="habit-form">
+                    <input type="text" id="habit-name" placeholder="Enter habit name" required>
+                    <input type="text" id="habit-description" placeholder="Brief description">
+                    <button type="submit">Add Habit</button>
+                </form>
+            </section>
+
+            <!-- Habits List Section -->
+            <section class="habits-list">
+                <h2>Your Habits</h2>
+                <div id="habits-container" class="habits-container">
+                    <!-- Habits will be dynamically added here -->
+                </div>
+            </section>
+
+            <!-- Premium Themes Section -->
+            <section class="premium-section">
+                <h2>Premium Themes</h2>
+                <div class="themes-container">
+                    <div class="theme-card" data-theme="dark">
+                        <h3>Dark Mode</h3>
+                        <p>Sleek dark theme</p>
+                        <button class="theme-btn" data-price="500">$5.00</button>
+                    </div>
+                    <div class="theme-card" data-theme="colorful">
+                        <h3>Colorful</h3>
+                        <p>Vibrant colors</p>
+                        <button class="theme-btn" data-price="500">$5.00</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Weekly Report Section -->
+            <section class="report-section">
+                <h2>Weekly Report</h2>
+                <button id="generate-report">Generate Weekly Report</button>
+                <div id="report-output" class="report-output"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
