@@ -14,7 +14,7 @@ A minimal, one-feature habit tracker that focuses on simplicity and clean execut
 
 1. **Clone and Install**
    ```bash
-   git clone <your-repo>
+   git clone https://github.com/dheeraj-codingdesk/Habit-Tracker.git
    cd tiny-habit-tracker
    npm install
    ```
