@@ -1,4 +1,4 @@
-# Tiny SaaS Habit Tracker
+# Tiny Habit Tracker
 
 A minimal, one-feature habit tracker that focuses on simplicity and clean execution.
 
